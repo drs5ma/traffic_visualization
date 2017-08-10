@@ -1,6 +1,6 @@
 # traffic_visualization
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "red is ingress, green egress")
+![alt text](traffic_visualization/Screen_Shot_2017_08_10_at_6_22_35_PM.png "red is ingress, green egress")
 
 
 usage:
