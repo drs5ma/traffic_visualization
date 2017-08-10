@@ -38,17 +38,6 @@ def f():
 start_new_thread(f, ())
 
 
-def h(q,lu):
-    l = q.qsize()
-    
-    print 'unloading queue of size '+str(l)
-    
-    for i in range(l):
-        f =q.get()
-        print 'entry: '+str(f)
-    lu = {}
-
-
 print q.qsize()
 
 duration  = 24*60.0 #seconds
@@ -77,14 +66,14 @@ class SimpleEcho(WebSocket):
                 
                 self.sendMessage(str(json.dumps([{'ip':srcip,'loc':srcloc},{'ip':dstip,'loc':dstloc}])))
                 port = dstport if srcip!=host else srcport
-                print 'port ',port,' srcloc',srcloc,'dstloc',dstloc
+                #print 'port ',port,' srcloc',srcloc,'dstloc',dstloc
             lookup = {}
-            print 'emptied q',q.qsize()
+            #print 'emptied q',q.qsize()
             time.sleep(granularity)
         return 0
         
 
         
-server = SimpleWebSocketServer('', 80, SimpleEcho)
+server = SimpleWebSocketServer('', 81, SimpleEcho)
 server.serveforever()
 

@@ -1,5 +1,8 @@
 # traffic_visualization
 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "red is ingress, green egress")
+
+
 usage:
 
 1. on machine to monitor traffic:
@@ -20,6 +23,6 @@ $> python -m SimpleHTTPServer 80
 
 
 other info:
-makes requests to ipinfo.io
-caches ip -> lat,lon info in db.txt
-firewall might cause problems
+makes requests to ipinfo.io  
+caches ip -> lat,lon info in db.txt   
+firewall might cause problems   
